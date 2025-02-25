@@ -96,7 +96,10 @@ class QuarkMerger:
                 
                 # 生成批處理文件
                 batch_content = f'cd /d "{self.current_folder}"\n'
-                batch_content += f'copy /b {"+".join(f'"{f}"' for f in batch_files)} "{temp_output}"\n'
+                quoted_files = []
+                for f in batch_files:
+                    quoted_files.append(f'"{f}"')
+                batch_content += f'copy /b {"+".join(quoted_files)} "{temp_output}"\n'
                 
                 with codecs.open('merge.bat', 'w', 'gbk') as f:
                     f.write(batch_content)
@@ -116,7 +119,10 @@ class QuarkMerger:
                 self.window.update()
                 
                 batch_content = f'cd /d "{self.current_folder}"\n'
-                batch_content += f'copy /b {"+".join(f'"{f}"' for f in temp_files)} "{output_file}"\n'
+                quoted_temp_files = []
+                for f in temp_files:
+                    quoted_temp_files.append(f'"{f}"')
+                batch_content += f'copy /b {"+".join(quoted_temp_files)} "{output_file}"\n'
                 
                 with codecs.open('merge.bat', 'w', 'gbk') as f:
                     f.write(batch_content)
