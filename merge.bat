@@ -1,2 +1,0 @@
-cd /d "C:/Users/Jackie/Downloads/QuarkDownloads/story"
-copy /b "temp_1.ts"+"temp_2.ts"+"temp_3.ts"+"temp_4.ts"+"temp_5.ts"+"temp_6.ts"+"temp_7.ts"+"temp_8.ts"+"temp_9.ts"+"temp_10.ts"+"temp_11.ts"+"temp_12.ts"+"temp_13.ts"+"temp_14.ts"+"temp_15.ts"+"temp_16.ts"+"temp_17.ts"+"temp_18.ts"+"temp_19.ts"+"temp_20.ts"+"temp_21.ts"+"temp_22.ts"+"temp_23.ts"+"temp_24.ts"+"temp_25.ts"+"temp_26.ts"+"temp_27.ts"+"temp_28.ts"+"temp_29.ts"+"temp_30.ts"+"temp_31.ts"+"temp_32.ts"+"temp_33.ts"+"temp_34.ts"+"temp_35.ts"+"temp_36.ts"+"temp_37.ts"+"temp_38.ts"+"temp_39.ts" "output.ts"
