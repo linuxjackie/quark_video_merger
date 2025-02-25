@@ -143,6 +143,13 @@ class QuarkMerger:
                     os.remove(os.path.join(self.current_folder, temp_file))
                 except:
                     pass
+            
+            # 清理臨時的merge.bat文件
+            try:
+                if os.path.exists('merge.bat'):
+                    os.remove('merge.bat')
+            except:
+                pass
                     
             return True
             

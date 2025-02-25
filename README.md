@@ -1,5 +1,9 @@
 # 夸克視頻緩存合併工具
 
+[![Python Version](https://img.shields.io/badge/python-3.6%2B-blue)](https://www.python.org/downloads/)
+[![License](https://img.shields.io/badge/license-MIT-green.svg)](https://opensource.org/licenses/MIT)
+[![Platform](https://img.shields.io/badge/platform-windows-lightgrey)](https://www.microsoft.com/windows)
+
 這是一個用於合併夸克瀏覽器緩存視頻片段的工具。它可以自動掃描並合併數字命名的視頻分片（如：0, 1, 2, 3...），生成完整的視頻文件。
 
 ## 功能特點
@@ -18,6 +22,24 @@
 - Windows 操作系統
 - Python 3.6 或更高版本
 - 足夠的硬碟空間（至少是原視頻分片總大小的2倍）
+
+## 快速開始
+
+### 從源碼安裝
+
+```bash
+# 克隆倉庫
+git clone https://github.com/linuxjackie/quark_video_merger.git
+cd quark_video_merger
+
+# 運行程序（Windows）
+start.bat
+```
+
+### 直接下載
+1. 從 [Releases](https://github.com/linuxjackie/quark_video_merger/releases) 頁面下載最新版本
+2. 解壓縮到任意目錄
+3. 運行 `start.bat`
 
 ## 安裝說明
 
@@ -103,4 +125,47 @@
 
 ## 免責聲明
 
-本工具僅用於學習和研究目的，請勿用於非法用途。使用本工具時請遵守相關法律法規。 
+本工具僅用於學習和研究目的，請勿用於非法用途。使用本工具時請遵守相關法律法規。
+
+## 開發相關
+
+### 目錄結構
+```
+quark_video_merger/
+├── quark_merger.py   # 主程序
+├── start.bat         # 啟動腳本
+├── .gitignore       # Git忽略配置
+└── README.md        # 說明文檔
+```
+
+### 環境設置
+- Python 3.6+
+- tkinter（GUI庫，通常包含在Python標準庫中）
+- 虛擬環境（自動創建和管理）
+
+### 貢獻指南
+1. Fork 本倉庫
+2. 創建您的特性分支 (`git checkout -b feature/AmazingFeature`)
+3. 提交您的更改 (`git commit -m '添加一些特性'`)
+4. 推送到分支 (`git push origin feature/AmazingFeature`)
+5. 打開一個 Pull Request
+
+## 版本歷史
+
+- v1.0.0 (2024-02-25)
+  - 初始版本發布
+  - 基本的視頻分片合併功能
+  - 添加虛擬環境支持
+
+## 作者
+
+LinuxJackie - [@linuxjackie](https://github.com/linuxjackie)
+
+## 開源協議
+
+本項目基於 MIT 協議開源 - 查看 [LICENSE](LICENSE) 文件了解更多信息
+
+## 致謝
+
+- 感謝所有貢獻者的付出
+- 感謝 Python 和 tkinter 提供的強大支持 
